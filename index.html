@@ -70,7 +70,7 @@
             It has also been designed to make the most of the current technologies and tools used on the ISS.
             This Unmanned Space Vehicle (USV) can dock with the Canadarm using its conventional docking port
             and then uses its RCS system to navigate to otherwise unreachable areas, leveraging its power reserves
-            and generation based on solar cells and lithium-ion batteries to extend the station self-diagnostics
+            and generation based on solar cells and lithium-ion batteries to extend the station self-diagnostic
             tools. The platform has been designed to reach similar speeds as the Canadarm (0,6m/s) and has an
             array of lidar systems to detect and avoid collisions. The on-board control system also makes use of
             its optically calibrated inertial complex, comparing its dynamic features to known position of the
@@ -88,7 +88,7 @@
                 2 modules of 4 RCS Thrusters for complete range of motion
               </li>
               <li>
-                2 360 degrees lidar sensor to detect and avoir colisions
+                2 360 degrees lidar sensor to detect and avoid collisions
               </li>
               <li>
                 8 solar panels
@@ -106,14 +106,20 @@
 
           <h2 class="section-heading">Control System</h2>
           <p>
-
+            The Space Quad platform is controlled autonomously using a combination of proximity sensors and modelized
+            trajectory planning. There are two proximity lidar systems installed on the USV, allowing it to have a
+            complete view over its surroundings. The platform has internal linear and angular acceleration sensors,
+            allowing it to position itself relative to the space station’s referential system. To account for the drift
+            that may be created in the positioning system, a laser calibration module using retroreflector positioned
+            on the space station has been designed. The trajectory of the Space Quad platform is generated using all
+            the positioning data to ensure a complete coverage of the station’s surface with our analysis tools.
           </p>
 
           <h2 class="section-heading">Propellants</h2>
           <p>
             A liquid form of hydrozine ( N2H4 ) and dinitrogen tetroxide are used as propellants for the
-            unmanned space vehicule . The fuel ( hydrozine ) and the oxydant ( dinitrogen tetroxide ) are
-            stored in fuel tanks inside of the USV . Two fuel lines are connected to the combustion chamber
+            unmanned space vehicle . The fuel ( hydrozine ) and the oxidant ( dinitrogen tetroxide ) are
+            stored in fuel tanks inside the USV . Two fuel lines are connected to the combustion chamber
             through the injectors . Since the dinitrogen tetroxide is used as a catalyst , the atomization
             and the mixing of the products will trigger the decomposition of the hydrozine . This highly
             energetic reaction is then directed to one or many nosels of the RCS .
@@ -121,26 +127,31 @@
 
           <img class="img-fluid" src="img/propellants.png" alt="">
 
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-WHqzwQvzVQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+
 
           <h2 class="section-heading">Blind spot accessibility</h2>
           <p>
             Able to identify damage currently not accessible from windows or Canadarm. With sensor able to capture
-            image
-            in different directions, it is possible to capture dammage that are not currently seeable from the windows
-            of the ISS or from camera already installed on the ISS.
+            images in different directions, it is possible to capture damages that are not currently seeable from the
+            windows
+            of the ISS or from cameras already installed on the ISS.
           </p>
 
           <h2 class="section-heading">Compatible with Canadarm</h2>
           <p>
             Can navigate around ISS with Canadarm. A docking station on the drone is made to be compatible with
-            the Canadarm so the drone can navigate around the ISS without using to much fuel. The drone has some
-
+            the Canadarm so the drone can navigate around the ISS without using too much fuel. The drone has some
+            handles to attach to the Canadarm.
           </p>
 
           <img class="img-fluid" src="img/canadarm.png" alt="">
 
 
-          <h2 class="section-heading">Lithium Ion batteries</h2>
+          <h2 class="section-heading">Lithium Ion Batteries</h2>
           <ul>
             <li>
               Performance Advantages
@@ -199,7 +210,7 @@
 
           <h2 class="section-heading">Solar panels</h2>
           <p>
-            Enables self battery charge. With low power consumption in idle mode, it is possible to charge
+            Enables self battery charges. With low power consumption in idle mode, it is possible to charge
             batteries efficiently without any other source of energy than solar power.
           </p>
 
@@ -208,13 +219,11 @@
 
           <h2 class="section-heading">3D Camera Sensor</h2>
           <p>
-            Stereoscopic camera for 3D imagery make it possible to get crystal clear images and analyse more
-            efficiently
-            data received. It can also analyse more precisly the location of anomalies with overlap between multiple
-            pictures.
-            Easy analysis with imagery software. UV filter for better clarity images and shadow filtering. Image
-            comparison
-            analysis based on location for better data processing results
+            Stereoscopic camera for 3D imagery makes it possible to get crystal clear images and analyze
+            more efficiently data received. It can also analyze more precisely the location of anomalies
+            with overlap between multiple pictures. Easy analysis with imagery software. UV filters for
+            better clarity images and shadow filtering. Image comparison analysis based on location for
+            better data processing results.
           </p>
 
           <p>
@@ -268,7 +277,7 @@
           </ul>
           <img class="img-fluid" src="img/autoprocessing.png" size=50% alt="" />
 
-          <h2 class="section-heading">Laser localisation</h2>
+          <h2 class="section-heading">Laser Localization</h2>
           <ul>
             <li>
               Distance measurement based on time-of-flight of a laser beam reflected on strategically disposed
@@ -291,13 +300,13 @@
 
           <h2 class="section-heading">Autonomous Missions</h2>
           <p>
-            The Space Quad handles custom mission planning for more effecient missions when needed. This
-            means the mission times will vary depending on the type of mission that is made. If a full
-            automatic mission is made, data acquiring can take up to an hour, but if a specific region of the
-            ISS is targeted, a mission could take as low as fifteen minutes. Live feedback status of the drone
-            is shown on the mission software, this ensures eveything is going as scheduled during the mission.
-            It is possible to have manua takeouver is necessary. Three autonomous controller are installed for
-            redundancy and high reliability.
+            The Space Quad handle custom mission planning for more efficient missions when needed.
+            This means the mission times will vary depending on the type of mission that is made.
+            If a full automatic mission is made, data acquiring can take up to an hour, but if a
+            specific region of the ISS is targeted, a mission could take as low as fifteen minutes.
+            Life feedback status of the drone is shown on the mission software, this ensures everything
+            is going as scheduled during the mission. It is possible to have a manual takeover is necessary.
+            Three autonomous controllers are installed for redundancy and high reliability.
           </p>
           <img class="img-fluid" src="img/auto_mission.png" alt="">
 
@@ -311,20 +320,31 @@
 
           <h2 class="section-heading">Data Transmission</h2>
           <p>
-            Live data transmission to ISS with frequency based transmission. This technology is proven and
-            works well in different environements. Data processing on ISS to reduce the payload size and
-            enables to have more powerful computer do the processing than on board. It is also possible to take
-            control more easily of the data processing. It is also easier to make software updates and to add
-            custom functions to the image analysis software.
+            Live data transmission to ISS with frequency based transmission. This technology is proven and works well
+            in different environments. Data processing on ISS to reduce the payload size and enables to have more
+            powerful computers do the processing than on board. It is also possible to take control more easily of the
+            data processing. It is also easier to make software updates and to add custom functions to the image
+            analysis software.
           </p>
 
-          <h2 class="section-heading">Safe distance flight</h2>
+          <h2 class="section-heading">Safe Distance Flight</h2>
           <p>
-            The drone will fly at 15-20 m from ISS. This is close enough for detailed images while being
-            a safe distance for manual takeover. A distance a little further reudces mission time but reduces
-            the quality of the data received. With high resolution sensors, a 15-20 m distance is totaly acceptable
-            and make possible to get data from dammage as small as 0.5 mm of diameter.
+            The drone will fly at 15-20 m from ISS. This is close enough for detailed images while being a safe
+            distance for manual takeover. A distance a little further reduces missions time but reduces the quality of
+            the data received. With high resolution sensors, a 15-20 m distance is totally acceptable and make possible
+            to get data from damage as small as 0.5 mm in diameter.
           </p>
+
+          <h2 class="section-heading">Design by Nature</h2>
+
+          <p>
+            Indicatoridae are indicator birds used by humans to guide them to bee hives . The birds search for the
+            emplacements of the hives and later transmit the information to man through a special singing tone .
+            Inspired by them , the unmanned space vehicle searches for the emplacements of the space debris and damages
+            on the International Space Station and transmits the information to the ISS’s astronauts . The astronauts
+            will then share the data with Mission Control on Earth .
+          </p>
+          <img class="img-fluid" src="img/bird.png" alt="">
 
           <h2 class="section-heading">Bibliography</h2>
           <p>
